@@ -1,6 +1,6 @@
 <idea-plugin>
-    <id>com.linkkou.plugin.intellij.assistant.mybaitslog</id>
-    <name>MybatisLog</name>
+    <id>com.linkkou.plugin.intellij.assistant.mygetset</id>
+    <name>MyGetSet</name>
     <vendor email="chinacclk@gmail.com" url="https://github.com/Link-Kou/intellij-treeInfotip">linkkou</vendor>
 
     <!-- 插件版本 -->
@@ -11,9 +11,9 @@
     <description><![CDATA[
       <ul>
         <h3>English:</h3>
-        <li>Copy with mybatis-log-plugin</li>
+        <li>SetGet Help Tool</li>
         <h3>中文：</h3>
-        <li>拷贝 mybatis-log-plugin</li>
+        <li>辅助生成SetGet</li>
       </ul>
     ]]></description>
 
@@ -21,8 +21,8 @@
     <change-notes><![CDATA[
       <ul>
         <p>1.0.0</p>
-        <li> 1. 修正并运行 mybatis-log-plugin </li>
-        <li> 1. Fix and run mybatis-log-plugin </li>
+        <li> 1. 修正并运行 适用于2020  </li>
+        <li> 1. Fix and run with 2020</li>
       </ul>
     ]]></change-notes>
 
@@ -33,22 +33,17 @@
 
     <!--必须为企业版-->
     <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.java</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
-        <consoleFilterProvider implementation="com.plugins.mybaitslog.MyBatisLogProvider"/>
-        <toolWindow id="MyBatis Log" secondary="true" icon="/icons/mybatis.png" anchor="bottom"
-                    factoryClass="com.plugins.mybaitslog.MyBatisLogToolWindow"/>
     </extensions>
 
     <actions>
 
-        <!-- restore sql from selection -->
-        <action class="com.plugins.mybaitslog.action.RestoreSqlForSelection" id="RestoreSqlAction"
-                text="Restore Sql from Selection"
-                description="Restore Sql from Selection">
-            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
-            <add-to-group group-id="ConsoleEditorPopupMenu" anchor="before" relative-to-action="ConsoleView.ClearAll"/>
+        <action class="com.plugins.mygetset.generateAction" id="GetSetBuild" text="GetSet" >
+            <add-to-group group-id="GenerateGroup" anchor="first" />
+            <keyboard-shortcut keymap="$default" first-keystroke="shift alt D"/>
         </action>
 
     </actions>
