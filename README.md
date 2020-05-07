@@ -27,20 +27,20 @@
  
 ### 手动安装
 
- [plugin.intellij.assistant.mygetset-1.0.0.zip](https://raw.githubusercontent.com/Link-Kou/intellij-treeInfotip/master/builds/plugin.intellij.assistant.mygetset-1.0.0.zip)
+ [plugin.intellij.assistant.mygetset-1.0.0.zip](https://raw.githubusercontent.com/Link-Kou/intellij-getset/master/builds/plugin.intellij.assistant.mygetset-1.0.0.zip)
  
 ### 一、示列
 > ##### 图片示列教程：（国内有些网络啊！tmd图片看不了的）
 
  对象生成Set方法
  
- ![样列](https://raw.githubusercontent.com/Link-Kou/intellij-treeInfotip/master/image/2020-05-07_19-25-59.gif "样列")
+ ![样列](https://raw.githubusercontent.com/Link-Kou/intellij-getset/master/image/2020-05-07_19-25-59.gif "样列")
 
  实体类生成GetSet
  
- ![样列](https://raw.githubusercontent.com/Link-Kou/intellij-treeInfotip/master/image/2020-05-07_19-20-02.jpg "样列")
+ ![样列](https://raw.githubusercontent.com/Link-Kou/intellij-getset/master/image/2020-05-07_19-20-02.jpg "样列")
  
  
- ![样列](https://raw.githubusercontent.com/Link-Kou/intellij-treeInfotip/master/image/2020-05-07_19-18-09.gif "样列")
+ ![样列](https://raw.githubusercontent.com/Link-Kou/intellij-getset/master/image/2020-05-07_19-18-09.gif "样列")
  
 
